@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #fafafa, #ddd);
+}
+
+/* Header Styles */
+header {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  border-bottom: 2px solid #fff;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-rect {
+  width: 150px;
+  height: auto;
+}
+
+.logo-square {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.slogan {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+/* Tabs Navigation */
+.tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.tabs button {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.tabs button:hover,
+.tabs button.active {
+  background-color: #ffc107;
+  color: #000;
+}
+
+/* Tab Content Sections */
+.tab-content {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+#men {
+  background-color: #3b5323;
+  color: #fff;
+}
+
+#women {
+  background-color: #d43f8d;
+  color: #fff;
+}
+
+#wedding {
+  background-color: #f0e5e5;
+  color: #000;
+}
+
+/* Image Gallery */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery img {
+  width: 90%;
+  max-width: 600px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #ffc107;
+  text-decoration: none;
+}

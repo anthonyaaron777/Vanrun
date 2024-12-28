@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VanRun Fashions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="vl/l1.png" alt="Logo 1" class="logo-rect">
+      <img src="vl/l2.png" alt="Logo 2" class="logo-square">
+    </div>
+    <h1 class="slogan">Refined Gents</h1>
+  </header>
+
+  <main>
+    <nav class="tabs">
+      <button onclick="showSection('men')">Men's Collection</button>
+      <button onclick="showSection('women')">Women's Collection</button>
+      <button onclick="showSection('wedding')">Wedding Collection</button>
+    </nav>
+
+    <section id="men" class="tab-content active">
+      <!-- Men’s images -->
+      <div class="gallery">
+        <!-- Images for men's collection -->
+        <script>
+          for (let i = 1; i <= 70; i++) {
+            document.write(`<img src="vm/m${i}.jpg" alt="Men's Suit ${i}">`);
+          }
+        </script>
+      </div>
+    </section>
+
+    <section id="women" class="tab-content">
+      <!-- Women’s images -->
+      <div class="gallery">
+        <!-- Images for women's collection -->
+        <script>
+          for (let i = 1; i <= 28; i++) {
+            document.write(`<img src="vw/w${i}.jpg" alt="Women's Suit ${i}">`);
+          }
+        </script>
+      </div>
+    </section>
+
+    <section id="wedding" class="tab-content">
+      <!-- Wedding images -->
+      <div class="gallery">
+        <!-- Images for wedding collection -->
+        <script>
+          for (let i = 1; i <= 23; i++) {
+            document.write(`<img src="vg/g${i}.jpg" alt="Wedding Suit ${i}">`);
+          }
+        </script>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-details">
+      <p><strong>Contacts:</strong> +256742655372, +256783754127</p>
+      <p><strong>Location:</strong> Kampala Uganda, Nakasero Market Street, Energy Center Room E33</p>
+      <p><strong>Email:</strong> <a href="mailto:vanrunfashions@gmail.com">vanrunfashions@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
